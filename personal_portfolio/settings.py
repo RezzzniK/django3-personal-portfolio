@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-gx5^_s%_w6!p=7l#yk^cdv131gkd^sot-g^5r3p_v4)(s&)tv#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rezzznik.pythonanywhere.com']
 
 
 # Application definition
@@ -118,9 +118,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATICFILES_DIRS = [BASE_DIR / 'static',]
+#STATICFILES_DIRS = [BASE_DIR / 'static',]
 STATIC_URL = '/static/'
-
+STATIC_ROOT = BASE_DIR / 'static'
 #ADDING URL FOR urls.py
 MEDIA_URL='/media/'
 #ADDING THE PATH WERE WE WILL SAVE OUR MEDIA files
